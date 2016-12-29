@@ -1,0 +1,282 @@
+/*
+Theme Name: pxhua
+Theme URI: https://wordpress.org/themes/pxhua/
+Author: Donghua Lau
+Author URI: http://liudonghua.net
+Description: Nothing
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light
+Text Domain: twentyhua
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+#hua-body {
+    background-color:#E9EAEC;
+    font-family: "Microsoft YaHei","微软雅黑","黑体","宋体",Helvetica,Arial,Tahoma;
+}
+.site-main {
+	min-height: 800px;
+    margin: 1px 0px 1px 0px;
+    background-color: white;
+    padding-top: 1px;
+}
+
+#hua-nav{
+	border-radius: 0px;
+	background-color:white;
+	min-height:60px;
+	margin-bottom:0px;
+	border: 0px solid transparent;
+}
+#hua-nav a, #hua-nav a:focus{
+	font-size:16px;
+	text-decoration: none;
+	color: #333;
+}
+#hua-nav .navbar-brand{
+	padding-left: 30px;
+    padding-top: 10px;
+	padding-bottom: 2px;
+}
+#hua-nav .navbar-text{
+    margin-right: 15px;
+    margin-left: 0px;
+	margin-top: 15px;
+    margin-bottom: 10px;
+}
+#hua-nav .navbar-text a{
+	font-size: 20px;
+}
+.navbar-brand img{
+	height:100%;
+	border-radius:50%;
+}
+//#hua-navbar-collapse ul{
+//	padding-top:8px;
+//}
+#hua-nav ul li > a:hover{
+    color: #178fe6;
+}
+#hua-nav ul li.active > a{
+	border-bottom: solid 2px #178fe6;
+    color: #000000;
+    background-color: #ffffff;
+}
+#hua-nav .navbar-toggle{
+	border-color:white;
+	border-radius:0px;
+}
+#hua-nav .navbar-toggle:focus, #hua-nav .navbar-toggle:hover{
+	background-color:white;
+}
+#hua-nav .navbar-right a{
+	font-size:12px;
+	padding-left: 0px;
+}
+#hua-nav .navbar-right a > span{
+	font-size:12px;
+	border-style: solid; 
+	border-width: 1px;
+	border-radius: 3px;
+    color: #178fe6;
+	padding: 5px 10px 5px 10px;
+}
+#music-bar{
+}
+#hua-body .badge{
+	float:right;
+	background-color: #5bc0de;
+}
+.home-screen{
+	width:100%;
+	padding: 5px 5px 5px 5px;
+}
+.home-screen img{
+	width:100%;
+}
+.panel-title-right{
+	float:right;
+	text-align:right;
+	width:50%;
+	font-size:13px;
+}
+.entry-header{
+	text-align:center;
+}
+.entry-title{
+	font-size:24px;
+}
+.entry-content{
+	//margin-top:30px;
+	word-wrap: break-word;
+}
+.entry-meta .categories-links{
+	padding-left:10px;
+}
+.entry-meta .author{
+	display:none;
+}
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label,
+.comment-form-comment label{
+	width: 70px;
+	text-align:left;
+}
+.comment-form-author input,
+.comment-form-email input,
+.comment-form-url input,
+.comment-form-comment textarea{
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.comment-form-comment textarea{
+    height: auto;
+}
+.submit{
+	color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.archive-title,
+.search-title{
+	font-size:15px;
+}
+@media (min-width: 992px){
+	.col-md-10{
+		margin-left:12%;
+	}
+	#hua-nav .navbar-form{
+		margin:0px;
+		border-color:#fff;
+		padding-top:13px;
+	}
+}
+@media (max-width: 992px){
+	.comment-form-author input,
+	.comment-form-email input,
+	.comment-form-url input,
+	.comment-form-comment textarea{
+		width: 100%;
+	}
+	.site-main {
+		min-height: 600px;
+	    //margin: 5px 0px 10px 0px;
+	    background-color: white;
+	}
+	#hua-nav .navbar-form{
+		margin:0px;
+		border-color:#fff;
+	}
+}
+//.site-main p{
+//	word-wrap: break-word;
+//}
+#search-word{
+    height: auto;
+}
+@media (max-width: 1090px){
+	.site-main img{
+		width:100%;
+	}
+	#gotop{ 
+		display:block;  
+		width:40px; 
+		height:40px;
+		position:fixed;  
+		bottom:20px;  
+		right:10px; 
+		border-radius:50%;   
+		text-decoration:none;  
+		display:none;  
+		background-color:#5bc0de;
+		//background:url(/wp-content/themes/twentyhua/images/supperman-80x80.png);
+		background:url(/wp-content/themes/pxhua/images/gotop.png);
+		background-size:40px;
+		background-repeat: no-repeat;
+		/* for IE */
+  		filter:alpha(opacity=60);
+  		/* CSS3 standard */
+  		opacity:0.6 !important;
+		z-index:999;
+	}
+}
+@media (min-width: 1090px){
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+	#gotop{ 
+		display:block;  
+		width:40px; 
+		height:40px;
+		position:fixed;  
+		bottom:30px;  
+		right:20%; 
+		border-radius:50%;   
+		text-decoration:none;  
+		display:none;  
+		background-color:#5bc0de;
+		//background:url(/wp-content/themes/twentyhua/images/supperman-80x80.png);
+		background:url(/wp-content/themes/pxhua/images/gotop.png);
+		background-size:40px;
+  		opacity:0.6 !important;
+		z-index:999;
+	}
+}
+.site-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #8d8d8d;
+	background-color:white;
+	padding-top: 20px;
+}
+.margin-top20{
+	margin-top:20px;
+}
+.margin-top40{
+	margin-top:40px;
+}
+.margin-top80{
+	margin-top:80px;
+}
+.padding-top20{
+	padding-top:20px;
+}
+.padding-top40{
+	padding-top:40px;
+}
