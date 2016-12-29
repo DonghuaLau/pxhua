@@ -717,6 +717,23 @@ function hua_routing_load($route)
 
 }
 
+function my_get_recent_posts($num) {
+    global $wpdb;
+
+    $posts = $wpdb->get_results("SELECT comment_count, ID, post_title FROM $wpdb->posts where post_type = 'post' and post_status = 'publish' ORDER BY post_date DESC LIMIT 0 , $num");
+
+    foreach ($posts as $post) {
+        setup_postdata($post);
+        $id = $post->ID;
+        $title = $post->post_title;
+        $count = $post->comment_count;
+        $popular .= '<li>';
+        $popular .= '<a href="' . get_permalink($id) . '" title="' . $title . '">' . $title . '</a> ';
+        $popular .= '</li>';
+    }
+    return $popular;
+}
+
 function get_popular_posts($num) {
     global $wpdb;
     
@@ -741,14 +758,7 @@ function get_popular_posts($num) {
 function my_get_search_form()
 {
 	$form =  '<form role="search" method="get" class="row" action="/">'
-			//.'	<div class="col-xs-2 col-ms-1">'
-			//.'	  <label>'
-			//.'		<span class="screen-reader-text">搜搜看: </span>'
-			//.'	  </label>'
-			//.'	</div>'
-			//.'	<div class="col-xs-3">'
 			.'		<input type="search" class="form-control" placeholder="搜搜看..." value="" name="s" style="width:160px;float:left;">'
-			//.'	</div>'
 			.'	<input type="submit" class="search-submit btn btn-default" value="搜索" style="width:80px;margin-left:10px;">'
 			.'</form>';
 	echo $form;

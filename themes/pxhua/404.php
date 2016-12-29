@@ -25,9 +25,6 @@ get_header(); ?>
 
 			<div class="page-wrapper">
 				<div class="page-content">
-					<h2 style="font-size:20px;"><?php //_e( '好尴尬，有没有？', 'pxhua' ); ?></h2>
-					<p><?php //_e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentythirteen' ); ?></p>
-
 					<?php my_get_search_form(); ?>
 				</div><!-- .page-content -->
 			</div><!-- .page-wrapper -->
