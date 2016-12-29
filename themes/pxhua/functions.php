@@ -193,7 +193,7 @@ function twentyhua_scripts_styles() {
 	//wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.03' );
 
 	// Loads our main stylesheet.
-	wp_enqueue_style( 'twentyhua-style', get_stylesheet_uri(), array(), '2016-12-15' );
+	wp_enqueue_style( 'twentyhua-style', get_stylesheet_uri(), array(), '2016-12-16' );
 
 	// Loads the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'twentyhua-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentyhua-style' ), '2016-03-18' );

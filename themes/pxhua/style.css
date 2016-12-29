@@ -177,7 +177,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .search-title{
 	font-size:15px;
 }
-@media (min-width: 992px){
+@media (min-width: 768px){
 	.col-md-10{
 		margin-left:12%;
 	}
@@ -187,7 +187,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		padding-top:13px;
 	}
 }
-@media (max-width: 992px){
+@media (max-width: 768px){
 	.comment-form-author input,
 	.comment-form-email input,
 	.comment-form-url input,
